@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            margin: 0 auto;
+            background-image: url(bg_photo.jpg);
+            width: 960px;
+            height: 634px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        div {
+            margin-top: 12%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            color: red;
+        }
+        lable {
+            margin-bottom: 15px;
+        }
+        .right {
+            text-align: center;
+        }
+        input[type="text"] {
+            background-color: rgba(0,0,0,0);
+            border: none;
+            border-bottom: 2px solid rgb(59, 59, 59);
+            margin-bottom: 10px;
+            outline: none;
+        }
+        button[type="button"] {
+            width: 50%;
+            height: 35px;
+            margin: 0 auto;
+            background-color: rgb(60, 69, 78);
+            color: snow;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <p>Список завдань</p>
+            <form name="f1" id="f11">
+                <lable class="new our"><input type="checkbox" name="check" id="c1" value="HTML5">HTML5</lable>
+                <lable class="new our"><input type="checkbox" name="check" id="c2" value="CSS3">CSS3</lable>
+                <lable class="new our"><input type="checkbox" name="check" id="c3" value="SASS/SCSS">SASS/SCSS</lable>
+                <lable class="new our"><input type="checkbox" name="check" id="c4" value="Bootstrap">Bootstrap</lable>
+            </form>
+        </div>
+        <div class="right">
+            <p>Додати нове завдання</p>
+            <form name="f2">
+               <input type="text" name="text" id="write"> 
+               <button type="button" value="додати" name="sub" onclick="subTask()">додати</button>
+            </form> 
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
